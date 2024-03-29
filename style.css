@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Federo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    justify-content: space-between;
+    display: flex;
+}
+.header-list{
+    display: flex;
+    gap: 40px;
+}
+/* ----------------------------------- */
+
+.site-section{
+    display: flex;
+}
+
+.site-section_carusel-left{
+    width: 53px;
+    height: 27px;
+    margin-top: 25vh;
+    margin-left: 22px;
+    color: #797979;
+
+}
+
+.site-section_carusel-right{
+    width: 53px;
+    height: 27px;
+    margin-top: 25vh;
+    margin-left: 22px;
+    color: #797979;
+}
+
+.main-container{
+    width: 180vh;
+    height: 450px;
+    margin: 0 auto;
+    border: 1px double;
+    display: flex;
+
+}
+
+.wrapper-2{
+    width: 355px;
+    height: 120px;
+    margin: 20vh auto;
+    font-family: "Federo", sans-serif;
+    font-weight: 400;
+    border: 1px dashed red;
+}
+.font-h2{
+    margin-top:-50px;
+ width: 240px;
+ height: 50px;
+ /* line-height: -50px; */
+ margin: 0;
+ padding: 0;
+}
+
+.wrapper-2-item-h2{
+     /* width: 255px;
+    height: 90px; */
+    margin: 20vh auto;
+    font-family: "Federo", sans-serif;
+    font-weight: 400;
+    border: 1px dashed red;
+}
+
+
+.wrapper-2_btn{
+    width: 122px;
+    height: 38px;
+    padding: 12px 23px;
+    display: flex;
+    line-height: -100px;
+    background: #434343;
+    color: white;
+}
+
+
+.font-h2{
+    font-weight: 400px;
+    /* size: 50px; */
+    /* line-height: 60px; */
+    letter-spacing: 2%;
+}

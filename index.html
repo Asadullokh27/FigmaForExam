@@ -1,73 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Federo&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <header class="site-header">
-        <div class="container">
-            <div class="header">
-                <a href="#">
-                    <img src="./assets/images/Drile.svg" alt="Bu yerda site nomi bolishi kerak edi">
-                </a>
-                <ul class="header-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Page</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="logo-wrapper">
-                    <label for="name">
-                        <img src="./assets/images/SearchLogo.svg" alt="">
-                    </label>
-                    <!-- <input type="search" name="" id="name" style="border: none;"> -->
-                    <a href="#">
-                        <img src="./assets/images/Vector.svg" alt="Korzinka">
-                    </a>
-                    <a href="#">
-                        <img src="./assets/images/HumanIcon.svg" alt="Human">
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="header">
+          <a href="#">
+            <img
+              src="./assets/images/Drile.svg"
+              alt="Bu yerda site nomi bolishi kerak edi"
+            />
+          </a>
+          <ul class="header-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="logo-wrapper">
+            <label for="name">
+              <img src="./assets/images/SearchLogo.svg" alt="" />
+            </label>
+            <!-- <input type="search" name="" id="name" style="border: none;"> -->
+            <a href="#">
+              <img src="./assets/images/Vector.svg" alt="Korzinka" />
+            </a>
+            <a href="#">
+              <img src="./assets/images/HumanIcon.svg" alt="Human" />
+            </a>
+          </div>
         </div>
+      </div>
     </header>
+
+
     <main class="site-main">
-        <section class="site-section">
-            <div class="site-section_carusel-left">
-                <img src="./assets/images/Vector (3).svg" alt="carusel left Vector (3).svg">
+      <section class="carusel-section">
+        <div class="carusel-section__left">
+          <img
+            src="./assets/images/Vector (3).svg"
+            alt="carusel left Vector (3).svg"
+          />
+        </div>
+        <div class="container">
+          <div class="carusel">
+            <div class="image-wrapper">
+              <img
+                src="./assets/images/Image1.png"
+                alt="Bu yerda furniture uchun rasm bo'lishi kerak edi"
+              />
             </div>
+            <ul class="wrapper-2">
+              <li class="wrapper-2-item-h2">
+                <h2 class="font-h2">
+                  Get ready for Our <br />
+                  stylist chair
+                </h2>
+              </li>
+              <li class="wrapper-2-item-btn">
+                <button class="wrapper-2_btn">SHOP NOW</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="site-section_carusel-right">
+          <img
+            src="./assets/images/Vector (4).svg"
+            alt="carusel right Vector (4).svg"
+          />
+        </div>
+      </section>
 
-            <div class="main-container">
-                <div class="image-wrapper">
-                    <img src="./assets/images/Image1.png" alt="Bu yerda furniture uchun rasm bo'lishi kerak edi">
+      <div class="backgg">
+
+      </div>
+
+      <section class="seller-section">
+        <div class="container">
+          <h2 class="bestseller">Best Seller Items</h2>
+          <div class="seller">
+            <div class="card">
+                <div class="card-text">
+                    <div class="card__image">
+                        <img
+                        src="assets/images/product1.png"
+                        alt="Bu yerda qandil chiqishi kerak edi!"
+                        />
+                    </div>
+                    <h3>Metal Vintage Pendant</h3>
+                    <p>$79.00</p>
                 </div>
+              <div class="button-wrapper">
+                <button class="btn-primary">
+                  <img
+                    src="assets/images/Refresh.svg"
+                    alt="Bu yerda refresh logo bolishi kerajk edi!"
+                  />
+                </button> 
+                <button>
+                  <img
+                    src="assets/images/Like.svg"
+                    alt="Bu yerda like logo bolishi kerajk edi!"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="assets/images/Basket.svg"
+                    alt="Bu yerda basket logo bolishi kerajk edi!"
+                  />
+                </button>
+              </div>
+              <div class="wrapper-info">
+                <p class="hot-text">HOT</p>
+                <p class="discount">-5%</p>
+              </div>
+            </div>
 
-                <ul class="wrapper-2">
-                   <li class="wrapper-2-item-h2">
-                        <h2 class="font-h2">Get ready for <br> Our stylist chair </h2>
-                        
-                   </li>
 
-                    <li class="wrapper-2-item-btn">
-                        <button class="wrapper-2_btn">SHOP NOW</button>
-                    </li>
+            <div class="card">
+                <div class="card-text">
+                    <div class="card__image">
+                        <img
+                        src="assets/images/product1.png"
+                        alt="Bu yerda qandil chiqishi kerak edi!"
+                        />
+                    </div>
+                    <h3>Metal Vintage Pendant</h3>
+                    <p>$79.00</p>
                 </div>
+              <div class="button-wrapper">
+                <button>
+                  <img
+                    src="assets/images/Refresh.svg"
+                    alt="Bu yerda refresh logo bolishi kerak edi!"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="assets/images/Like.svg"
+                    alt="Bu yerda like logo bolishi kerak edi!"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="assets/images/Basket.svg"
+                    alt="Bu yerda basket logo bolishi kerak edi!"
+                  />
+                </button>
+              </div>
+              <div class="wrapper-info">
+                <p class="hot-text">HOT</p>
+                <p class="discount">-5%</p>
+              </div>
             </div>
 
-            <div class="site-section_carusel-right">
-                <img src="./assets/images/Vector (4).svg" alt="carusel right Vector (4).svg">
+
+            <div class="card">
+                <div class="card-text">
+                    <div class="card__image">
+                        <img
+                        src="assets/images/product1.png"
+                        alt="Bu yerda qandil chiqishi kerak edi!"
+                        />
+                    </div>
+                    <h3>Metal Vintage Pendant</h3>
+                    <p>$79.00</p>
+                </div>
+              <div class="button-wrapper">
+                <button>
+                  <img
+                    src="assets/images/Refresh.svg"
+                    alt="Bu yerda refresh logo bolishi kerak edi!"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="assets/images/Like.svg"
+                    alt="Bu yerda like logo bolishi kerak edi!"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="assets/images/Basket.svg"
+                    alt="Bu yerda basket logo bolishi kerak edi!"
+                  />
+                </button>
+              </div>
+              <div class="wrapper-info">
+                <p class="hot-text">HOT</p>
+                <p class="discount">-5%</p>
+              </div>
             </div>
-        </section>
+
+            <div class="card">
+              <div class="card-text">
+                  <div class="card__image">
+                      <img
+                      src="assets/images/product1.png"
+                      alt="Bu yerda qandil chiqishi kerak edi!"
+                      />
+                  </div>
+                  <h3>Metal Vintage Pendant</h3>
+                  <p>$79.00</p>
+              </div>
+            <div class="button-wrapper">
+              <button>
+                <img
+                  src="assets/images/Refresh.svg"
+                  alt="Bu yerda refresh logo bolishi kerak edi!"
+                />
+              </button>
+              <button>
+                <img
+                  src="assets/images/Like.svg"
+                  alt="Bu yerda like logo bolishi kerak edi!"
+                />
+              </button>
+              <button>
+                <img
+                  src="assets/images/Basket.svg"
+                  alt="Bu yerda basket logo bolishi kerak edi!"
+                />
+              </button>
+            </div>
+            <div class="wrapper-info">
+              <p class="hot-text">HOT</p>
+              <p class="discount">-5%</p>
+            </div>
+          </div>
+
+            
+            
+
+           
+          </div>
+          <div class="seller-2">
+            <div class="card">
+              <div class="card-text">
+                  <div class="card__image">
+                      <img
+                      src="assets/images/product1.png"
+                      alt="Bu yerda qandil chiqishi kerak edi!"
+                      />
+                  </div>
+                  <h3>Metal Vintage Pendant</h3>
+                  <p>$79.00</p>
+              </div>
+            <div class="button-wrapper">
+              <button>
+                <img
+                  src="assets/images/Refresh.svg"
+                  alt="Bu yerda refresh logo bolishi kerak edi!"
+                />
+              </button>
+              <button>
+                <img
+                  src="assets/images/Like.svg"
+                  alt="Bu yerda like logo bolishi kerak edi!"
+                />
+              </button>
+              <button>
+                <img
+                  src="assets/images/Basket.svg"
+                  alt="Bu yerda basket logo bolishi kerak edi!"
+                />
+              </button>
+            </div>
+            <div class="wrapper-info">
+              <p class="hot-text">HOT</p>
+              <p class="discount">-5%</p>
+            </div>
+          </div>
+          
+
+
+          <div class="card">
+              <div class="card-text">
+                  <div class="card__image">
+                      <img
+                      src="assets/images/product1.png"
+                      alt="Bu yerda qandil chiqishi kerak edi!"
+                      />
+                  </div>
+                  <h3>Metal Vintage Pendant</h3>
+                  <p>$79.00</p>
+              </div>
+            <div class="button-wrapper">
+              <button>
+                <img
+                  src="assets/images/Refresh.svg"
+                  alt="Bu yerda refresh logo bolishi kerajk edi!"
+                />
+              </button>
+              <button>
+                <img
+                  src="assets/images/Like.svg"
+                  alt="Bu yerda like logo bolishi kerajk edi!"
+                />
+              </button>
+              <button>
+                <img
+                  src="assets/images/Basket.svg"
+                  alt="Bu yerda basket logo bolishi kerajk edi!"
+                />
+              </button>
+            </div>
+            <div class="wrapper-info">
+              <p class="hot-text">HOT</p>
+              <p class="discount">-5%</p>
+            </div>
+          </div>
+
+
+          <div class="card">
+              <div class="card-text">
+                  <div class="card__image">
+                      <img
+                      src="assets/images/product1.png"
+                      alt="Bu yerda qandil chiqishi kerak edi!"
+                      />
+                  </div>
+                  <h3>Metal Vintage Pendant</h3>
+                  <p>$79.00</p>
+              </div>
+            <div class="button-wrapper">
+              <button>
+                <img
+                  src="assets/images/Refresh.svg"
+                  alt="Bu yerda refresh logo bolishi kerajk edi!"
+                />
+              </button>
+              <button>
+                <img
+                  src="assets/images/Like.svg"
+                  alt="Bu yerda like logo bolishi kerajk edi!"
+                />
+              </button>
+              <button>
+                <img
+                  src="assets/images/Basket.svg"
+                  alt="Bu yerda basket logo bolishi kerajk edi!"
+                />
+              </button>
+            </div>
+            <div class="wrapper-info">
+              <p class="hot-text">HOT</p>
+              <p class="discount">-5%</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-3">
+        <div class="container">
+          <div class="section-3_wrapper">
+            <div class="image-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="title-wrapper">
+              
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

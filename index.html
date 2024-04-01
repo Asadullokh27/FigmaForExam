@@ -20,17 +20,17 @@
     <header class="site-header">
       <div class="container">
         <div class="header">
-          <a href="#site-main">
+          <a class="cursor-changer" onclick="scrollToHeight(0)">
             <img
               src="./assets/images/Drile.svg"
               alt="Bu yerda site nomi bolishi kerak edi"
             />
           </a>
           <ul class="header-list">
-            <li><a href="#site-main">Home</a></li>
-            <li><a href="#section-3">Shop</a></li>
-            <li><a href="#seller-section">Product</a></li>
-            <li><a href="#section-4">Carusel</a></li>
+            <li><a class="cursor-changer" onclick="scrollToHeight(0)">Home</a></li>
+            <li><a class="cursor-changer" onclick="scrollToHeight(1280)" >Shop</a></li>
+            <li><a class="cursor-changer" onclick="scrollToHeight(480)">Product</a></li>
+            <li><a class="cursor-changer" onclick="scrollToHeight(1950)">Carusel</a></li>
             <li><a href="#">Page</a></li>
             <li><a href="#site-footer">Contact</a></li>
           </ul>
@@ -97,7 +97,8 @@
           <div class="seller">
             <div class="card">
               <div class="card-text">
-                <div class="card__image">
+                <div class="card__image" >
+                  <a href="./moreinfo.html"></a>
                   <img
                     src="assets/images/product1.png"
                     alt="Bu yerda qandil chiqishi kerak edi!"
@@ -113,8 +114,10 @@
                     alt="Bu yerda refresh logo bolishi kerajk edi!"
                   />
                 </button>
-                <button class="btn-primary">
+                <button onclick="RedHeart('heart-btn-1')" class="btn-primary">
                   <img
+                    class="heart-size"
+                    id="heart-btn-1"
                     src="assets/images/Like.svg"
                     alt="Bu yerda like logo bolishi kerajk edi!"
                   />
@@ -150,11 +153,12 @@
                     alt="Bu yerda refresh logo bolishi kerak edi!"
                   />
                 </button>
-                <button class="btn-primary">
+                <button onclick="RedHeart('heart-btn-2')" class="btn-primary">
                   <img
+                    class="heart-size"
                     src="assets/images/Like.svg"
                     alt="Bu yerda like logo bolishi kerak edi!"
-                  />
+                   id="heart-btn-2"/>
                 </button>
                 <button class="btn-primary">
                   <img
@@ -612,9 +616,12 @@
     </main>
 
     <footer class="site-footer" id="site-footer">
+      <div class="opacity-setup">
+
+      </div>
       <div class="container">
         <div class="footer">
-          <h2>Drile</h2>
+          <h2 class="footer-header">Drile</h2>
           <div class="parent-ul">
               <ul>
                 <li class="text-footer">ABOUT US</li>
@@ -648,16 +655,18 @@
 
               <ul>
                 <li class="text-footer">FOLLOW US</li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#"><img class="icons" src="assets/images/Vector (14).svg" alt="">Facebook</a></li>
+                <li><a href="#"><img class="icons" src="assets/images/Vector (15).svg" alt="">Twitter</a></li>
+                <li><a href="#"><img class="icons" src="assets/images/Vector (16).svg" alt="">Instagram</a></li>
               </ul>
           </div>
         </div>
       </div>
+      <div class="copyright">
+          <p>© Copyright 2022 | drile | All right reserved.</p>
+      </div>
     </footer>
-
+    
 
 
       <!-- Swiper JS -->
@@ -665,6 +674,20 @@
 
   <!-- Initialize Swiper -->
   <script>
+        function RedHeart(id){
+          if(document.getElementById(id).getAttribute("src")=="assets/images/like.svg")
+            document.getElementById(id).src="assets/images/heart.png"
+          else
+            document.getElementById(id).src="assets/images/like.svg"
+
+        }
+        function scrollToHeight(height) {
+            window.scrollTo({
+                top: height,
+                behavior: 'smooth'
+            });
+        }
+
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 5,
       centeredSlides: true,
